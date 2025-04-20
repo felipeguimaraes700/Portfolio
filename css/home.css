@@ -2,3 +2,26 @@
     padding: 0;
     margin: 0;
 }
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://i.pinimg.com/736x/4f/84/3c/4f843c756f825b34514d573126676c12.jpg );
+    background-position: center;
+    background-size: cover;
+}
+
+.container-global{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 10px;
+
+}
+
+.container-ola{
+    font-size: 2rem;
+    color: w;
+}
