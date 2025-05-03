@@ -33,6 +33,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-color: black;
     background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/ec9828a3-586f-4f0f-bf89-de8940ee4515/segments/2:4:1/Flux_Dev_A_minimalist_background_sets_the_tone_for_a_mysteriou_1.jpg);
@@ -67,4 +68,22 @@ nav{
     margin-left: -600px;
     height: 2px;
     background-color: white;
+}
+
+.container-button{
+    margin-top: 50px;
+}
+
+.container-button button{
+    height: 60px;
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s linear;
+}
+.container-button button:hover{
+    background-color: #857744;
 }

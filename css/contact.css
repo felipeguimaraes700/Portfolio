@@ -13,4 +13,8 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/101689a5-0ffa-4bb7-aaf6-1b448d7e9116/Leonardo_Phoenix_10_Minimalist_abstract_art_with_a_matte_black_3.jpg);
+    background-size: cover;
+    color: #857744;
 }
+
