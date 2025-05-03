@@ -27,6 +27,11 @@ nav{
     margin-right: 40px;
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
+    transition: .3s linear;
+}
+.links-nav li a:hover{
+    color: #857744;
+    font-size: 1.4rem;
 }
 
 #home{
