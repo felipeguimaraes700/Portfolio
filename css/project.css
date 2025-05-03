@@ -12,12 +12,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/ae42923e-346d-4a95-a00e-d2ff9219d322/segments/2:4:1/Flux_Dev_A_sleek_professional_graphic_design_3D_render_set_aga_1.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-
+#project h2{
+    font-size: 4rem;
+    font-family: "Ephesis", cursive;
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 100px;
+}
 .container-project{
     display: grid;
     gap: 30px;

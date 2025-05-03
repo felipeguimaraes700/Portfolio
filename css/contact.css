@@ -17,4 +17,30 @@
     background-size: cover;
     color: #857744;
 }
+#contact h2{
+    font-family: "Ephesis", cursive;
+    font-size: 3rem;
+    color: #857744;
+}
+#contact p{
+    color: white;
+}
 
+.container-icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 40px;
+}
+.container-icon-contact a i{
+    font-size: 2.5rem;
+    color: white;
+    transition: .4s linear;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.container-icon-contact a i:hover{
+    background-color: #857744;
+}
