@@ -11,20 +11,42 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/101689a5-0ffa-4bb7-aaf6-1b448d7e9116/Leonardo_Phoenix_10_Minimalist_abstract_art_with_a_matte_black_0.jpg);
     background-size: cover;
 }
 
 .container-global-about{
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
     margin-top: 70px;
     margin-left: 30px;
+    color: white;
+    width: 90%;
+    height: 50%;
 }
 .container-global-about h1{
     font-family: "Ephesis", cursive;
     font-size: 5rem;
+    color: #857744;
 }
 .container-text-about{
     margin-top: 10px;
-    width: 57%;
     font-size: 1.4rem;
+    width: 900px;
+}
+
+.container-skils{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    background-color: #857744;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.container-skils i{
+    font-size: 5rem;
+    text-align: center;
+    color: black;
 }

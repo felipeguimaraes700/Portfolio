@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -57,6 +58,7 @@ nav{
 .container-global h1{
     font-family: "Ephesis", cursive;
     font-size: 6rem;
+    color: #857744;
 }
 .linha-central{
     position: fixed;
