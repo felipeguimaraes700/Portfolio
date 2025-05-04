@@ -10,8 +10,9 @@
 #sobre{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
-    background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/101689a5-0ffa-4bb7-aaf6-1b448d7e9116/Leonardo_Phoenix_10_Minimalist_abstract_art_with_a_matte_black_0.jpg);
+    background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/9a1e2a6f-1843-491d-be77-b8760663b8e4/segments/1:4:1/Flux_Dev_a_minimalist_and_futuristic_dark_background_with_a_gr_0.jpg);
     background-size: cover;
 }
 
@@ -36,17 +37,57 @@
     width: 900px;
 }
 
-.container-skils{
+.especialidades{
+    width: 750px;
+    text-align: center;
+    margin-left: 120px;
+}
+.especialidades h2{
+    font-family: "Ephesis", cursive;
+    font-size: 3rem;
+}
+.especialidades .container-especialidade-itens{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    background-color: #857744;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-especialidade-itens i{
+    font-size: 2rem;
+}
+
+.especialidades .container-especialidade-itens div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: 1px solid black;
+    margin: 10PX;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #857744;
+    color: black;
     border-radius: 20px;
+    transition: .2s linear;
+}
+.especialidades .container-especialidade-itens div:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.container-especialidade-itens div h3{
+    width: 300px;
+    text-align: center;
+}
+
+.container-skils{
+    border-radius: 20px;
+    width: 650px;
+    margin-left: -130px;
+    padding-left: 280px;
+    background-color: rgb(255, 255, 255);
 }
 .container-skils i{
-    font-size: 5rem;
+    font-size: 2.5rem;
     text-align: center;
-    color: black;
+    color: #000000;
+    margin: 5px;
 }
