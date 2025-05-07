@@ -45,6 +45,35 @@ nav{
     cursor: pointer;
 }
 
+.links-nav-mobile{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 0%;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.links-nav-mobile li{
+    margin-bottom: 50px;
+}
+.links-nav-mobile li a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    transition: .3s linear;
+}
+.links-nav-mobile li a:hover{
+    color: #857744;
+    font-size: 1.4rem;
+}
+
 .abrir{
     display: none;
 }
@@ -109,4 +138,31 @@ nav{
 }
 .container-button button:hover{
     background-color: #857744;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .links-nav{
+        display: none;
+    }
+    
+    .links-nav-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links-nav li{
+        margin-bottom: 50px;
+    }
+    .links-nav li a{
+        font-size: 1.5rem;
+    }
+    .abrir{
+        display: block;
+    }
 }
