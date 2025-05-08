@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     background: url(https://cdn.leonardo.ai/users/d3b590aa-3195-4754-8a83-79a91161f8b4/generations/9a1e2a6f-1843-491d-be77-b8760663b8e4/segments/1:4:1/Flux_Dev_a_minimalist_and_futuristic_dark_background_with_a_gr_0.jpg);
     background-size: cover;
 }
@@ -34,21 +34,24 @@
 .container-text-about{
     margin-top: 10px;
     font-size: 1.4rem;
-    width: 900px;
 }
 
 .especialidades{
-    width: 750px;
+    height: 100%;
     text-align: center;
-    margin-left: 120px;
 }
 .especialidades h2{
     font-family: "Ephesis", cursive;
     font-size: 3rem;
 }
 .especialidades .container-especialidade-itens{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    width: 750px; 
+    margin: 0;
 }
 
 .container-especialidade-itens i{
@@ -63,7 +66,9 @@
     border: 1px solid black;
     margin: 10PX;
     padding: 20px;
-    width: 300px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 200px;
     height: 200px;
     background-color: #857744;
     color: black;
@@ -74,20 +79,51 @@
     box-shadow: 0px 0px 5px black;
 }
 .container-especialidade-itens div h3{
-    width: 300px;
     text-align: center;
 }
 
 .container-skils{
     border-radius: 20px;
-    width: 650px;
-    margin-left: -130px;
-    padding-left: 280px;
-    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin-left: -35px;
+    padding: 10px 20px 10px 50px;
+    margin-bottom: 40px;
+    background-color: white
 }
 .container-skils i{
     font-size: 2.5rem;
     text-align: center;
     color: #000000;
     margin: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1570px){
+    .container-global-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-text-about{
+        width: 100%;
+    }
+    .especialidades{
+            margin: 0;
+            margin-top: 60px;
+    }
+    .container-especialidade-itens{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (max-width: 830px){
+    .container-especialidade-itens{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
