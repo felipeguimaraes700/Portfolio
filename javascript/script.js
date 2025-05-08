@@ -10,6 +10,25 @@ function closeNav(){
     document.querySelector(".links-nav-mobile").style.width = "0%";
 }
 
+document.addEventListener("click", function(event) {
+    const menu = document.querySelector(".links-nav-mobile");
+    const abrirBtn = document.querySelector(".abrir");
+    const fecharBtn = document.querySelector(".fechar");
+
+    // Verifica se o menu está visível
+    const menuAberto = menu.style.width !== "0%" && window.innerWidth <= 800;
+
+    // Se o menu está aberto e o clique foi fora dele e fora dos ícones
+    if (
+        menuAberto &&
+        !menu.contains(event.target) &&
+        !abrirBtn.contains(event.target) &&
+        !fecharBtn.contains(event.target)
+    ) {
+        closeNav(); // Fecha o menu
+    }
+});
+
 window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
         // Fecha o menu mobile e reseta ícones ao redimensionar

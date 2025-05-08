@@ -54,8 +54,9 @@ nav{
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: #857744;
     width: 0%;
+    list-style: none;
     overflow: hidden;
     transition: .3s ease-in-out;
 }
@@ -65,12 +66,13 @@ nav{
 .links-nav-mobile li a{
     text-decoration: none;
     margin-right: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
     transition: .3s linear;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 .links-nav-mobile li a:hover{
-    color: #857744;
+    color: #ffffff;
     font-size: 1.4rem;
 }
 
