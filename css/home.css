@@ -142,10 +142,27 @@ nav{
 
 /* RESPONSIVIDADE */
 
+@media (min-width: 801px) {
+    .links-nav {
+        display: flex;
+    }
+
+    .links-nav-mobile {
+        display: none !important; /* força a esconder mesmo se JS mudar */
+        width: 0% !important; /* garante que o menu recolhe */
+    }
+
+    .abrir,
+    .fechar {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     body{
         overflow-x: hidden;
     }
+    
     .links-nav{
         display: none;
     }
