@@ -19,7 +19,6 @@
 .container-global-about{
     display: flex;
     justify-content: space-around;
-    padding: 20px;
     margin-top: 70px;
     margin-left: 30px;
     color: white;
@@ -50,7 +49,6 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
-    width: 750px; 
     margin: 0;
 }
 
@@ -121,9 +119,22 @@
 }
 
 @media (max-width: 830px){
+    .especialidades{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     .container-especialidade-itens{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: aquamarine;
+        width: 100vw;
+    }
+    .especialidades .container-especialidade-itens div{
+        max-width: 250px;
+        min-width: 150px;
+        height: 200px;
     }
 }
