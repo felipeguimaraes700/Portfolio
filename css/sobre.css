@@ -9,6 +9,7 @@
 
 #sobre{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
@@ -18,6 +19,7 @@
 
 .container-global-about{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 70px;
     margin-left: 30px;
@@ -33,15 +35,19 @@
 .container-text-about{
     margin-top: 10px;
     font-size: 1.4rem;
+    width: 80%;
 }
 
 .especialidades{
     height: 100%;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .especialidades h2{
     font-family: "Ephesis", cursive;
     font-size: 3rem;
+    margin-bottom: 30px;
 }
 .especialidades .container-especialidade-itens{
     display: flex;
@@ -82,11 +88,11 @@
 
 .container-skils{
     border-radius: 20px;
-    width: 50%;
-    margin-left: -35px;
-    padding: 10px 20px 10px 50px;
-    margin-bottom: 40px;
-    background-color: white
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: white;
+    text-align: center;
 }
 .container-skils i{
     font-size: 2.5rem;
@@ -104,18 +110,6 @@
         justify-content: center;
         flex-direction: column;
     }
-    .container-text-about{
-        width: 100%;
-    }
-    .especialidades{
-            margin: 0;
-            margin-top: 60px;
-    }
-    .container-especialidade-itens{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
 }
 
 @media (max-width: 830px){
@@ -124,23 +118,5 @@
     }
     .container-text p{
         font-size: 1.2rem;
-    }
-
-    .especialidades{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container-especialidade-itens{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-    }
-    .especialidades .container-especialidade-itens div{
-        max-width: 250px;
-        min-width: 150px;
-        height: 200px;
     }
 }
