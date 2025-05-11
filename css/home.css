@@ -147,6 +147,9 @@ nav.scroll {
 
 
 .container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -162,6 +165,11 @@ nav.scroll {
 }
 .container-button button:hover{
     background-color: #857744;
+}
+.fa-github{
+    font-size: 3rem;
+    margin-left: 10px;
+    color: white;
 }
 
 /* RESPONSIVIDADE */
