@@ -131,8 +131,7 @@ nav.scroll {
     color: white;
     font-size: 2rem;
     margin-top: 10px;
-    height: 50px; /* pra evitar pular a altura quando o texto muda */
-    overflow: hidden;
+    height: 50px;
     text-align: center;
     animation: fadeIn .5s ease-in-out;
 }
@@ -200,9 +199,6 @@ nav.scroll {
     }
     .container-button button{
         background-color: #857744;
-    }
-    nav.scroll{
-        display: none;
     }
 }
 
