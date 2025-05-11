@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
 
 nav{
     position: fixed;
@@ -199,6 +203,10 @@ nav.scroll {
     }
     .container-button button{
         background-color: #857744;
+    }
+    nav.scroll{
+        backdrop-filter: blur(0);
+        background-color: #7c7c7c00;
     }
 }
 
