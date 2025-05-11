@@ -29,6 +29,34 @@ document.addEventListener("click", function(event) {
     }
 });
 
+//texto animado home-page
+const textos = [
+    "Design com propósito",
+    "Impacto visual",
+    "Autenticidade"
+  ];
+
+  let index = 0;
+  const textoElement = document.getElementById("texto-animado");
+
+  function trocarTexto() {
+    // Apaga
+    textoElement.style.opacity = 0;
+
+    setTimeout(() => {
+      // Troca o texto e mostra
+      textoElement.textContent = textos[index];
+      textoElement.style.opacity = 1;
+
+      // Próximo índice
+      index = (index + 1) % textos.length;
+    }, 500); // Tempo do fade-out
+  }
+
+  setInterval(trocarTexto, 3000); // Troca a cada 3s
+
+
+
 window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
         // Fecha o menu mobile e reseta ícones ao redimensionar

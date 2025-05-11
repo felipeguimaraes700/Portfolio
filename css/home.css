@@ -13,6 +13,7 @@ nav{
     top: 0;
     width: 100%;
     height: 80px;
+    z-index: 1;
 }
 nav.scroll {
     background-color: #7c7c7c63;
@@ -51,7 +52,7 @@ nav.scroll {
 }
 
 .links-nav-mobile{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -65,9 +66,11 @@ nav.scroll {
     overflow: hidden;
     transition: .3s ease-in-out;
 }
+
 .links-nav-mobile li{
     margin-bottom: 50px;
 }
+
 .links-nav-mobile li a{
     text-decoration: none;
     margin-right: 40px;
@@ -120,14 +123,25 @@ nav.scroll {
     font-size: 6rem;
     color: #857744;
 }
-.linha-central{
-    position: fixed;
-    top: 52%;
-    width: 70%;
-    margin-left: -600px;
-    height: 2px;
-    background-color: white;
+.container-ola p{
+    margin-top: 20px;
 }
+
+.container-animado {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+    height: 50px; /* pra evitar pular a altura quando o texto muda */
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn .5s ease-in-out;
+}
+
+#texto-animado {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 .container-button{
     margin-top: 50px;
@@ -195,5 +209,8 @@ nav.scroll {
 @media (max-width: 535px){
     .container-global h1{
         font-size: 3rem;
+    }
+    .container-animado{
+        font-size: 1.5rem;
     }
 }
