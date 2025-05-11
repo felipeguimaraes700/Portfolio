@@ -49,3 +49,6 @@ window.addEventListener("scroll", function () {
       nav.classList.remove("scroll");
     }
   });
+
+  //animações das divs
+  AOS.init()
