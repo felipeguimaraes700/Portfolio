@@ -49,7 +49,30 @@
 .project01{
     background: url(../img/imgPJ01.png);
     background-size: cover;
+    background-position: center;
 }
+.project02{
+    background: url(../img/imgPJ02.png);
+    background-size: cover;
+    background-position: center;
+}
+.project03{
+    background-size: cover;
+    background-position: center;
+}
+.project04{
+    background-size: cover;
+    background-position: center;
+}
+.project05{
+    background-size: cover;
+    background-position: center;
+}
+.project06{
+    background-size: cover;
+    background-position: center;
+}
+
 
 @media (max-width: 1330px){
     .container-project{
